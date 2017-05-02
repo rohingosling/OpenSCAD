@@ -156,7 +156,7 @@ cage_color             = "green";
 //   variables, vs. local module (method) variables.
 //
 // - Thingiverse only integrates constant literal values. So as long as we reference other parameters or 
-//   initialize variables as expressions, then none of these will apear in the Thingiverse customizer.
+//   initialize variables as expressions, then none of these will appear in the Thingiverse customizer.
 //
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -289,14 +289,14 @@ module main ()
 //   The diameter for each balls.
 //
 // - clearance
-//   Reduction in the radius of each ball, to acomodate component clearance.
+//   Reduction in the radius of each ball, to accommodate component clearance.
 //   Note: clearance reduces the radius by clearance mm, not the diameter.
 //
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 module component_ball_array ( count, diameter, clearance )
 {
-    // Retrieve class memeber data.
+    // Retrieve class member data.
     // - We do this to make it easier to change member variable names more easily if we have to in the future.
     // - This also helps us quickly see which global variables we need to access for this module.
     // - Also neatens up our computation a bit, by removing the "m_" from the local module variable names.
@@ -440,7 +440,7 @@ module component_outer_ring ()
 
 module component_cage ()
 {   
-    // Retrieve class memeber data.
+    // Retrieve class member data.
     // - We do this to make it easier to change member variable names more easily if we have to in the future.
     // - This also helps us quickly see which global variables we need to access for this module.
     // - Also neatens up our computation a bit, by removing the "m_" from the local module variable names.
@@ -503,7 +503,7 @@ module component_cage ()
 
 module cutting_tool_access_port_array ()
 {
-    // Retrieve class memeber data.
+    // Retrieve class member data.
     // - We do this to make it easier to change member variable names more easily if we have to in the future.
     // - This also helps us quickly see which global variables we need to access for this module.
     // - Also neatens up our computation a bit, by removing the "m_" from the local module variable names.
@@ -515,7 +515,7 @@ module cutting_tool_access_port_array ()
     bottom_cage_access_ports_enabled = m_bottom_cage_access_ports_enabled;
     top_cage_access_ports_enabled    = m_top_cage_access_ports_enabled;
     
-    // Configure access port dimentions.
+    // Configure access port dimensions.
     
     e  = C_EXCESS;
     ah = width / 2.0 + e;
@@ -578,11 +578,11 @@ module cutting_tool_inner_knurling ()
 {
     // Retrieve global parameters.
     
-    e = C_EXCESS;                   // Extra length used to eliminate floating point diffrence errors during bollean operations.
+    e = C_EXCESS;                   // Extra length used to eliminate floating point difference errors during boolean operations.
     n = m_inner_knurling_count;     // Number of knurling cuts.
     d = m_inner_knurling_depth + e; // Cut depth.
     k = 360.0 / n;                  // Arc length in degrees.
-    p = m_inner_knurling_cut_ratio; // Knerling cut ratio.
+    p = m_inner_knurling_cut_ratio; // Knurling cut ratio.
     w = m_width + 2.0*e;            // Bearing width.
     
     // Generate cutting tool.
@@ -692,7 +692,7 @@ module cutting_tool_outer_knurling ()
 
 module profile_inner_ring ()
 {
-    // Retrieve class memeber data.
+    // Retrieve class member data.
     // - We do this to make it easier to change member variable names more easily if we have to in the future.
     // - This also helps us quickly see which global variables we need to access for this module.
     // - Also neatens up our computation a bit, by removing the "m_" from the local module variable names.
@@ -728,7 +728,7 @@ module profile_inner_ring ()
 
 module profile_outer_ring ()
 {
-    // Retrieve class memeber data.
+    // Retrieve class member data.
     // - We do this to make it easier to change member variable names more easily if we have to in the future.
     // - This also helps us quickly see which global variables we need to access for this module.
     // - Also neatens up our computation a bit, by removing the "m_" from the local module variable names.
@@ -769,7 +769,7 @@ module profile_outer_ring ()
 
 module profile_ring ( chamfer_enabled, chamfer_size )
 {
-    // Retrieve class memeber data.
+    // Retrieve class member data.
     // - We do this to make it easier to change member variable names more easily if we have to in the future.
     // - This also helps us quickly see which global variables we need to access for this module.
     // - Also neatens up our computation a bit, by removing the "m_" from the local module variable names.
@@ -849,7 +849,7 @@ module profile_ring ( chamfer_enabled, chamfer_size )
 
 module profile_cage ()
 {
-    // Retrieve class memeber data.
+    // Retrieve class member data.
     // - We do this to make it easier to change member variable names more easily if we have to in the future.
     // - This also helps us quickly see which global variables we need to access for this module.
     // - Also neatens up our computation a bit, by removing the "m_" from the local module variable names.
@@ -906,7 +906,7 @@ module profile_cage ()
 
 module profile_ball_template ()
 {
-    // Retrieve class memeber data.
+    // Retrieve class member data.
     // - We do this to make it easier to change member variable names more easily if we have to in the future.
     // - This also helps us quickly see which global variables we need to access for this module.
     // - Also neatens up our computation a bit, by removing the "m_" from the local module variable names.
