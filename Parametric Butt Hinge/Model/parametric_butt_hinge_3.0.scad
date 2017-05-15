@@ -1,6 +1,6 @@
 // -------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------
 // Title:        Parametric Caged Bearing
-// Version:      2.8
+// Version:      3.0
 // Release Date: 2017-04-01 (ISO)
 // Author:       Rohin Gosling
 // -------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------
@@ -8,22 +8,6 @@
 // Description:
 //
 // - Parametric butt hinge, designed to be printed in one step.
-//
-// Module and Function Call Structure:
-//
-// - Main
-//   - leaf
-//     - workpiece_leaf_knuckle_pin
-//       - workpiece_leaf_knuckle
-//         - workpiece_leaf
-//         - workpiece_gusset_array
-//           - workpiece_gusset
-//             - rectangle
-//           - tool_cutter_knuckle_array
-//         - tool_cutter_knuckle_array
-//       - pin
-//     - tool_cutter_fastener_set
-//       - tool_cutter_fastener
 //
 // -------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------
 
@@ -64,6 +48,9 @@ C_MIN_FASTENER_COLUMN_COUNT    = C_CONSTANT + 1;
 C_MAX_FASTENER_COLUMN_COUNT    = C_CONSTANT + 2; 
 C_MIN_TESSELLATION             = C_CONSTANT + 32; 
 C_MAX_TESSELLATION             = C_CONSTANT + 256;
+C_MIN_THROW_ANGLE              = C_CONSTANT + -90;
+C_MAX_THROW_ANGLE              = C_CONSTANT + 180;
+C_DEFAULT_THROW_ANGLE          = C_CONSTANT + 0;
 
 // -------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------
 // Thingiverse Parameters.
@@ -80,7 +67,7 @@ C_MAX_TESSELLATION             = C_CONSTANT + 256;
 //
 // -------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------
 
-/* [Options] */
+/* [Assembly Options] */
 
 enable_male_leaf      = 1;     // [ 0:No, 1:Yes ]
 enable_female_leaf    = 1;     // [ 0:No, 1:Yes ]
@@ -91,19 +78,21 @@ enable_pin            = 1;     // [ 0:No, 1:Yes ]
 // Turn this off to set a custom pin diameter. Auto pin size is equal to the leaf gauge.
 enable_auto_pin_size  = 1;     // [ 0:No, 1:Yes ]
 enable_fasteners      = 1;     // [ 0:No, 1:Yes ]
+// From +180 degrees fully closed, to -90 degrees fully opened. Default = 0 (ie. Opened flat).
+throw_angle           = 0.0;     // [ -90 : 180 ]
 // Recommended value is 64 or greater.
 resolution            = 128;
 component_color       = "Silver";
 
 /* [Hinge Parameters] */
 
-hinge_width             = 60.0;
-leaf_height             = 60.0;
+hinge_width             = 65.0;
+leaf_height             = 65.0;
 // Leaf and knuckle thickness. Values greater than 3mm recommended.
 leaf_gauge              = 5.0;
 // Recomended values between 0.3 and 4.0. Better quality below 3.0, tough to loosen.
 component_clearance     = 0.4;
-knuckle_count           = 5;               // [3,5,7,9,11,13,15]
+knuckle_count           = 7;               // [3:2:31]
 // Manual pin diameter setting. Only has effect, if "Enable Auto Pin Size" is set to "No".
 pin_diameter            = 6.0;
 parametric_pin_diameter = ( enable_auto_pin_size == 1 ) ? leaf_gauge : pin_diameter;
@@ -113,13 +102,13 @@ parametric_pin_diameter = ( enable_auto_pin_size == 1 ) ? leaf_gauge : pin_diame
 // For countersunk, the chamfer angle may be adjusted using the other parameters.
 fstener_head_type                = 0;   // [ 0:Counterbored, 1:Countersunk ]
 counter_sink_depth               = 2.5;
-fastener_thread_diameter         = 3.0;
+fastener_thread_diameter         = 3.5;
 // Add 0.5mm to 1.0mm to the fastener head diameter, to allow for head clearance. 
 fastener_head_diameter           = 7.0;
-fastener_count                   = 5;
+fastener_count                   = 6;   // [3:32]
 fastener_column_count            = 2;   // [1,2]
 // Distance from the edge of the head diameter, to the edges of the leaves.
-fastener_margin                  = 3.5;
+fastener_margin                  = 4;
 
 
 // -------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------
@@ -128,9 +117,9 @@ fastener_margin                  = 3.5;
 // - If we treat an SCAD file as though it is an object oriented class, then we can prefix global variables
 //   with "m_", to denote class membership. 
 //   - As an alternative to "m_", we could also use "this_" as a standard. However, "m_" is shorter and faster to type.
-//   - Another advantage of this convention, is that we can arange parameters meant for display in Thingiverse, in 
-//     an order that makes sense to the user, while aranging the memeber versions of the parameters in an order
-//     that better acomodates constraint computation.
+//   - Another advantage of this convention, is that we can arrange parameters meant for display in Thingiverse, in 
+//     an order that makes sense to the user, while arranging the member versions of the parameters in an order
+//     that better accommodates constraint computation.
 //
 // - Once we have defined global variables as member variables of a class, in this case the class represented
 //   by the SCAD file, then we are free to better manage global vs local scope of class member 
@@ -150,6 +139,7 @@ m_knuckle_gusset_enabled = ( enable_knuckle_gusset == 1 ) ? true : false;
 m_pin_enabled            = ( enable_pin            == 1 ) ? true : false;
 m_pin_auto_size_enabled  = ( enable_auto_pin_size  == 1 ) ? true : false;
 m_fasteners_enabled      = ( enable_fasteners      == 1 ) ? true : false;
+m_throw_angle            = clip ( throw_angle, C_MIN_THROW_ANGLE, C_MAX_THROW_ANGLE );
 
 // Leaf Parameters
 
@@ -228,10 +218,53 @@ module main ()
     
     $fn = m_resolution;
     
-    // Generate model.
+    // Generate hinge assembly.
     
-    if ( m_female_leaf_enabled ) leaf ( C_FEMALE ); 
+    if ( m_female_leaf_enabled ) rotate ( [ 0.0, -m_throw_angle, 0.0 ] ) leaf ( C_FEMALE );
     if ( m_male_leaf_enabled )   leaf ( C_MALE );
+    
+}
+
+// -------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------
+// Module:      tool_cutter_text.
+// Module Type: Tool cutter.
+//
+// Description:
+//
+// - Inscribes a string of text onto a surface.
+//
+// Parameters:
+//
+// - string:
+//   The string of text we would like to inscribes.
+//
+// -------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------
+
+module tool_cutter_text ( string, size )
+{
+    // Local constants.
+    
+    SCG_OVERLAP = 0.01;     // Small tolerance to prevent SCG surface interference. 
+    
+    // create text cutter.
+
+    font   = "Ariel:style=Bold";    
+    height = 0.15*6.0;
+    xd     = 20.0;
+    yd     = 0.0;
+    zd     = height;
+    
+
+    translate ( [ xd, yd, -zd ] )
+    {
+        rotate ( [ 0.0, 0.0, -90.0 ] )
+        {
+            linear_extrude ( height = height + SCG_OVERLAP )
+            {
+                text ( string, font = font, size = size, valign = "center", halign = "center" );                
+            }
+        }
+    }
 }
 
 // -------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------
@@ -242,6 +275,10 @@ module main ()
 //
 // - Creates a hinge leaf component, whose gender may be selected through the gender argument.
 //
+// - Note:
+//   The text option is not made public to the Thingiverse Customizer at this time. 
+//   However, you can add and configure text here in the code.
+//
 // Parameters:
 //
 // - gender:
@@ -251,7 +288,22 @@ module main ()
 
 module leaf ( gender )
 {  
+    // Text configuration.
+    
+    text_enabled          = false;
+    text_string_female    = "0.4";
+    text_string_male      = "RG";
+    text_female_font_size = 8;
+    text_male_font_size   = 8;
+    
+    // Compute the gender angle.
+    // - 0 degrees for female, and 180 degrees for male.
+    // - In other words, we leave the female leaf un-rotated, but we rotate the male leaf 180 degrees, to place it at an 
+    //   opposing orientation to the female.
+    
     gender_angle = ( gender == C_FEMALE ) ? 0 : 180;
+    
+    // Create leaves.
     
     rotate ( [ 0, 0, gender_angle ] )
     {
@@ -267,6 +319,16 @@ module leaf ( gender )
             if ( m_fasteners_enabled )
             {
                 tool_cutter_fastener_set ( m_fastener_count, m_fastener_column_count, 0 );                
+            }
+            
+            // Cut text.
+            // -  We will only cut text into the leaves, if we are using exactly 4 fasteners per leaf.
+            // -  All other leaf counts will not leave enough space for the text to fit easily. So we only add text, if we are using 4 fasteners.
+            
+            if ( text_enabled && m_fastener_count == 4 )
+            {
+                if ( gender == C_FEMALE ) tool_cutter_text ( text_string_female, text_female_font_size );
+                if ( gender == C_MALE )   tool_cutter_text ( text_string_male,   text_male_font_size );
             }
         }
     }
@@ -841,7 +903,7 @@ module tool_cutter_knuckle_array ( gender, fill_component_clearance, size )
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Module:      workpiece_gusset
-// Module Type: Workpeice
+// Module Type: Workpiece
 //
 // Description:
 //
