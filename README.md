@@ -16,7 +16,9 @@ g = Knuckle radius
 
 Compute gusset radius. The radius of the circle, that is tangential to the knuckle cylinder.
 
-$\r={(2.0*g*w+w*w)}/{(2.0*g)}$
+r = ( 2.0*g*w + w*w ) / ( 2.0*g )
+
+$'y=x/r'$
 
 
 
