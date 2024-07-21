@@ -12,13 +12,20 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 Input values.
 
 $$
-\documentclass[fleqn]{article}
-\usepackage{amsmath}
-\begin{document}
 w = \text{Gusset width}
 g = \text{Knuckle radius}
-\end{document}
 $$
+
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{flushleft}
+\[
+a + b = c
+\]
+\end{flushleft}
+\end{document}
 
 Compute gusset radius.<br>
 The radius of the circle, that is tangential to the knuckle cylinder.
