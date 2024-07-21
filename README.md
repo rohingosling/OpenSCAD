@@ -8,7 +8,7 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 
 - Initialize input values.
 
-%%w = \text{Gusset width}$$.
+$$w = \text{Gusset width}$$.
 
 $$h = \text{Hinge leaf height}$$
 
