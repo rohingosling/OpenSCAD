@@ -31,11 +31,13 @@ $$y = \sqrt { r^2 - x^2 } \quad \text{...y intercept.}$$
 //      2      2 
 // y = a  (x-s)
 
-$$a_n = \dsqrt[4]{ 2 } \cdot \sqrt[4]{ s \cdot ( i - s ) - 2 \cdot r^2 } \quad \text{...Numerator}.$$
+$$a_n = \sqrt[4]{ 2 } \cdot \sqrt[4]{ s \cdot ( i - s ) - 2 \cdot r^2 } \quad \text{...Numerator}.$$
 
 $$a_d = \sqrt{ s \cdot ( 5 \cdot s - 3 \cdot i ) + 4 \cdot r^2 } \quad \text{...Denominator.}$$
 
-$$a  = \dfrac{a_n}{a_d}$$  
+$$a = \dfrac{a_n}{a_d}$$
+
+$$y = a^2 \cdot ( x - s )^2$$
 
 ![Image](images/parametric_hinge/Parabolic.PNG)
 
