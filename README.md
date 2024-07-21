@@ -3,7 +3,7 @@
 ## Parametric Butt Hinge
 Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com/thing:2187167)
 
-![Image](OpenSCAD/Parametric Butt Hinge/Images/Images 1/Parametric Hinge 0.png)
+![Image](Composite 1.PNG)
 
 
 | A | B | C |
