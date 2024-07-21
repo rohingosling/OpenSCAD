@@ -119,8 +119,8 @@ Thingiverse URL: [www.thingiverse.com/thing:2224678](https://www.thingiverse.com
 ## Gear Tester
 
 ### Sample Prints
-| ![Image](images/gear_tester/code_1_0.png) | ![Image](images/gear_tester/gear_tester_1_0.png) |
-| - | - |
+| ![Image](images/gear_tester/code_1_0.png) | ![Image](images/gear_tester/gear_tester_1_0.png) | ![Image](images/gear_tester/gear_tester_2_0.png) |
+| - | - | - |
 
 ## Cat-Food Sieve
 
