@@ -20,7 +20,8 @@ $$g = \text{Leafe gauge}$$
 
 - Compute the parabolic point of contact with the knuckle cylinder.
 
-i  = sqrt ( 8.0*r*r + s*s );    // Common root.
+$$i  = \sqrt { 8 \cdot r^2 + s^2 } \quad \text{...Common root.}$$
+
 x  = ( i - s )/2.0;             // x intercept.
 y  = sqrt ( r*r - x*x );        // y intercept.
 
