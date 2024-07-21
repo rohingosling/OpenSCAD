@@ -22,16 +22,17 @@ $$s = w \space + \space r \quad \text{...Cartesian position of the point where t
 
 $$i = \sqrt { 8 \cdot r^2 + s^2 } \quad \text{...Common root.}$$
 
-$$x = \dfrac{ i - s }{2} \quad \text{...x-intercept.}$$
+$$x = \dfrac{ i - s }{2} \quad \text{...x intercept.}$$
 
-$$y = \sqrt { r^2 - x^2 } \quad \text{...y-intercept.}$$
+$$y = \sqrt { r^2 - x^2 } \quad \text{...y intercept.}$$
 
-// Compute coefficient 'a' of vertex form parabola.
+- Compute coefficient $a$ of vertex form parabola.
 //
 //      2      2 
 // y = a  (x-s)
 
-an = root4 ( 2.0 ) * root4 ( s*( i - s ) - 2.0*r*r );   // Numerator.
+$$a_n = \sqrt[4]{ 2 } \cdot \sqrt[4]{ s \cdot ( i - s ) - 2 \cdot r^2 } \quad \text{...Numerator}.$$
+
 ad = sqrt ( s*( 5.0*s - 3.0*i ) + 4.0*r*r );            // Denominator.
 a  = an / ad;  
 
