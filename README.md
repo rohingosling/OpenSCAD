@@ -124,7 +124,9 @@ Thingiverse URL: [www.thingiverse.com/thing:2386923]([https://www.thingiverse.co
 
 ## Cat-Food Sieve
 
-Mixed my cat's food. The vet told me not to mix is. So I 3D-printed a sieve to separate it again.
+- Mixed my cat's food.
+- The vet told me not to mix it.
+- So I 3D-printed a sieve to separate it again.
 
 ### Sample Prints
 | ![Image](images/temp/sieve_1_0.png) |
