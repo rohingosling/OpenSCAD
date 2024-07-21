@@ -79,7 +79,7 @@ $$r \quad \text{...Leafe gauge.}$$
 
 $$s = w + r \quad \text{...Cartesian position of the point where the gusset curve merges with the leaf.}$$
 
-$$x = r \cdot \left( \dfrac{ r }{ s } \right)$$
+$$x = \dfrac{ r^2 }{ s }$$
 
 $$y = \sqrt{ r^2 - x^2}$$
 
