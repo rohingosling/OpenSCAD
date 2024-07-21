@@ -18,6 +18,8 @@ Compute gusset radius. The radius of the circle, that is tangential to the knuck
 
 $\r = ( 2.0*g*w + w*w ) / ( 2.0*g )$
 
+$\sqrt{3x-1}+(1+x)^2$
+
 Compute gusset height. The point of intersection between the knuckle cylinder and the gusset cutter.
 
 h = ( g*r ) / sqrt ( g*g + 2.0*g*w + r*r + w*w )
