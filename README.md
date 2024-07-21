@@ -105,7 +105,7 @@ Thingiverse URL: [www.thingiverse.com/thing:2224678](https://www.thingiverse.com
 ### Sample Prints
 | ![Image](images/caged_ball_bearing/internal_1_0.png) | ![Image](images/caged_ball_bearing/internal_2_0.png) | ![Image](images/caged_ball_bearing/internal_3_0.png) | ![Image](images/caged_ball_bearing/internal_4_0.png) |
 | - | - | - | - |
-| ![Image](images/caged_ball_bearing/internal_1_0.png) | ![Image](images/caged_ball_bearing/internal_1_0.png) | ![Image](images/caged_ball_bearing/internal_1_0.png) | ![Image](images/caged_ball_bearing/internal_1_0.png) |
+| ![Image](images/caged_ball_bearing/photo_1_0.png) | ![Image](images/caged_ball_bearing/photo_2_0.png) | ![Image](images/caged_ball_bearing/photo_3_0.png) | ![Image](images/caged_ball_bearing/code_1_0.png) |
 
 
 
