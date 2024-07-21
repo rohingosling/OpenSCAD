@@ -8,11 +8,11 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 
 - Initialize input values.
 
-$$w = \text{Gusset width}$$.
+$$w = \text{Gusset width}$$
 
 $$h = \text{Hinge leaf height}$$
 
-$$r = \text{Knuckle radius is equal to the leaf gauge}$$.
+$$r = \text{Knuckle radius is equal to the leaf gauge}$$
 
 $$s = w \space + \space r \space \text{...Cartesian position of the point where the gusset curve merges with the leaf}$$
 
