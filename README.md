@@ -120,8 +120,8 @@ Thingiverse URL: [www.thingiverse.com/thing:2386923]([https://www.thingiverse.co
 Thingiverse URL: N/A
 
 ### Sample Prints
-| ![Image](images/parametric_test_block/photo_1_0.png) | ![Image](images/parametric_test_block/photo_2_0.png) | ![Image](images/parametric_test_block/photo_3_0.png) |
-| - | - | - |
+| ![Image](images/gear_tester/code_1_0.png) | ![Image](images/gear_tester/gear_tester_1_0.png) |
+| - | - |
 
 
 
