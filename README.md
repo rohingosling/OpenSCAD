@@ -22,7 +22,7 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 
 - Input values.
 
-$$w \quad \text{...Gusset width.}$$
+  $$w \quad$$...Gusset width.
   
 $$h \quad \text{...Hinge leaf height.}$$
 
