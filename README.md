@@ -3,7 +3,7 @@
 ## Parametric Butt Hinge
 Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com/thing:2187167)
 
-![test_run_01.png](images/test_run_01.png)
+![Image](Parametric Butt Hinge/Images/Images 1/Parametric Hinge 0.png)
 
 
 | A | B | C |
