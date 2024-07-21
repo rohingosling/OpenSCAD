@@ -110,7 +110,7 @@ $$b = -a \cdot s$$
 ![Image](images/parametric_hinge/None.PNG)
 
 ## Parametric Test Block
-Thingiverse URL: [www.thingiverse.com/thing:2386923]([https://www.thingiverse.com/thing:2224678](https://www.thingiverse.com/thing:2386923))
+Thingiverse URL: [www.thingiverse.com/thing:2224678](https://www.thingiverse.com/thing:2386923)
 
 ### Sample Prints
 | ![Image](images/parametric_test_block/photo_1_0.png) | ![Image](images/parametric_test_block/photo_2_0.png) | ![Image](images/parametric_test_block/photo_3_0.png) |
