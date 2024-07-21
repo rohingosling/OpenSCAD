@@ -6,7 +6,7 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 
 #### Parabolic
 
-- Initialize input values.
+- Input values.
 
 $$w \quad \text{...Gusset width.}$$
   
@@ -65,7 +65,7 @@ $$x = \dfrac{ h \cdot ( g \space + \space w ) }{ r }$$
 
 #### Linear
 
-- Initialize input values.
+- Input values.
 
 $$w \quad \text{...Gusset width.}$$
 
@@ -79,10 +79,13 @@ $$r \quad \text{...Leafe gauge.}$$
 
 $$s = w + r \quad \text{...Cartesian position of the point where the gusset curve merges with the leaf.}$$
 
-x = r*r/s;
-y = sqrt ( r*r - x*x );
-a = y/( x - s );
-b = -a*s;
+$$x = r \cdot \left \dfrac{ r }{ s } \right$$
+
+$$y = \sqrt{ r^2 - x^2}$$
+
+$$a = \dfrac{ y }{x - s}$$
+
+$$b = -a \cdot s$$
 
 ![Image](images/parametric_hinge/Linear.PNG)
 
