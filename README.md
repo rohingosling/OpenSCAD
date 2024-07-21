@@ -3,8 +3,12 @@
 ## Parametric Butt Hinge
 Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com/thing:2187167)
 
+![test_run_01.png](images/test_run_01.png)
+
+
 | A | B | C |
 | ---- | ---- | ---- |
 |      |      |      |
 
-![XYZ]("Parametric Butt Hinge"/Images/"Images 1"/"Hinges - 1.0.jpg")
+
+  
