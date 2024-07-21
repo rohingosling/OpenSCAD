@@ -95,7 +95,7 @@ $$b = -a \cdot s$$
 
 ### Sample Prints
 | ![Image](images/parametric_hinge/composite_1_0.PNG) | ![Image](images/parametric_hinge/photo_4_0.png) | ![Image](images/parametric_hinge/photo_1_0.png) |
-| - | - | - |
+| - | - | - | - |
 | ![Image](images/parametric_hinge/composite_2_0.PNG) | ![Image](images/parametric_hinge/photo_3_0.png) | ![Image](images/parametric_hinge/photo_2_0.png) |
 
 ## Caged Ball Bearing
@@ -105,7 +105,7 @@ Thingiverse URL: [www.thingiverse.com/thing:2224678](https://www.thingiverse.com
 ### Sample Prints
 | ![Image](images/caged_ball_bearing/internal_1_0.png) | ![Image](images/caged_ball_bearing/internal_2_0.png) | ![Image](images/caged_ball_bearing/internal_3_0.png) | ![Image](images/caged_ball_bearing/internal_4_0.png) |
 | - | - | - | - |
-| ![Image](images/caged_ball_bearing/photo_2_0.png) | ![Image](images/caged_ball_bearing/photo_3_0.png) | ![Image](images/caged_ball_bearing/code_1_0.png) | ![Image](images/caged_ball_bearing/photo_1_0.png) |
+| ![Image](images/caged_ball_bearing/code_1_0.png) | ![Image](images/caged_ball_bearing/photo_2_0.png) | ![Image](images/caged_ball_bearing/photo_3_0.png) | ![Image](images/caged_ball_bearing/photo_1_0.png) |
 
 
 
