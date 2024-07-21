@@ -64,6 +64,26 @@ $$x = \dfrac{ h \cdot ( g \space + \space w ) }{ r }$$
 ![Image](images/parametric_hinge/Circular.PNG)
 
 #### Linear
+
+- Initialize input values.
+
+$$w \quad \text{...Gusset width.}$$
+
+$$h \quad \text{...Hinge leaf height.}$$
+
+$$r \quad \text{...Knuckle radius is equal to the leaf gauge.}$$
+
+$$r \quad \text{...Leafe gauge.}$$
+
+- Compute gusset tangent gradient.
+
+$$s = w + r \quad \text{...Cartesian position of the point where the gusset curve merges with the leaf.}$$
+
+x = r*r/s;
+y = sqrt ( r*r - x*x );
+a = y/( x - s );
+b = -a*s;
+
 ![Image](images/parametric_hinge/Linear.PNG)
 
 #### None
