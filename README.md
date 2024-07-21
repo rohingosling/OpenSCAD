@@ -23,10 +23,10 @@ Compute gusset height.<br>
 The point of intersection between the knuckle cylinder and the gusset cutter.
 
 h = ( g*r ) / sqrt ( g*g + 2.0*g*w + r*r + w*w )
-> $h = \dfrac{ g \cdot r }{ \sqrt{ d \cdot g} }$
+> $h = \dfrac{ g \cdot r }{ \sqrt{ d \cdot g \space + \space 2 \cdot g \cdot w} }$
 
-Compute intersection point between the knuckle and gusset cutting tool, using gusset height.
-The coordinate of the intersection point are, p(x,h), where h is the vertical value of the coordinate.
+Compute the intersection point between the knuckle and gusset cutting tool, using gusset height.
+The coordinates of the intersection point are, p(x,h), where h is the vertical value of the coordinate.
 
 x = h*( g + w ) / r
 
