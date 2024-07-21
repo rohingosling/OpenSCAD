@@ -4,14 +4,14 @@
 Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com/thing:2187167)
 ### Gusset Parameters
 
+Parabolic
+![Image](images/parametric_hinge/Parabolic.PNG)
+
 Circular
 ![Image](images/parametric_hinge/Circular.PNG)
 
 Linear
 ![Image](images/parametric_hinge/Linear.PNG)
-
-Parabolic
-![Image](images/parametric_hinge/Parabolic.PNG)
 
 None
 ![Image](images/parametric_hinge/None.PNG)
