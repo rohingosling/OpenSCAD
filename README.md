@@ -27,9 +27,6 @@ $$x = \dfrac{ i - s }{2} \quad \text{...x intercept.}$$
 $$y = \sqrt { r^2 - x^2 } \quad \text{...y intercept.}$$
 
 - Compute coefficient $a$ of vertex form parabola.
-//
-//      2      2 
-// y = a  (x-s)
 
 $$a_n = \sqrt[4]{ 2 } \cdot \sqrt[4]{ s \cdot ( i - s ) - 2 \cdot r^2 } \quad \text{...Numerator}.$$
 
