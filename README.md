@@ -16,7 +16,7 @@ Initialize input values.
 
 Compute gusset radius. The radius of the circle, that is tangential to the knuckle cylinder.
 
-> $r = \frac{\displaystyle{ 2 \cdot g \cdot w \space + \space w^2}}{\displaystyle{ 2 \cdot g}}$
+> $r = \frac{ 2 \cdot g \cdot w \space + \space w^2}}{ 2 \cdot g}}$
 
 Compute gusset height. The point of intersection between the knuckle cylinder and the gusset cutter.
 
