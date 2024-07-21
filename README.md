@@ -11,8 +11,8 @@ Parabolic
 
 Initialize input values.
 
-w = Gusset width
-g = Knuckle radius
+$w = Gusset width$
+$g = Knuckle radius$
 
 Compute gusset radius. The radius of the circle, that is tangential to the knuckle cylinder.
 
