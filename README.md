@@ -21,10 +21,12 @@ $$g = \text{Leafe gauge}$$
 - Compute the parabolic point of contact with the knuckle cylinder.
 
 ```math
-i  = \sqrt { 8 \cdot r^2 + s^2 } \quad \text{...Common root.} \\ \\
+i  = \sqrt { 8 \cdot r^2 + s^2 } \quad \text{...Common root.} \\
 \\
+
 x  = \dfrac{ i - s }{2} \quad \text{...x-intercept.} \\
 \\
+
 y  = \sqrt { r^2 - x^2 } \quad \text{...y-intercept.}
 ```
 
