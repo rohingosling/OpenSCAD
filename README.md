@@ -8,17 +8,17 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 
 - Initialize input values.
 
-$$w = \text{Gusset width}$$
+$$w = \text{Gusset width.}$$
 
-$$h = \text{Hinge leaf height}$$
+$$h = \text{Hinge leaf height.}$$
 
-$$r = \text{Knuckle radius is equal to the leaf gauge}$$
+$$r = \text{Knuckle radius is equal to the leaf gauge.}$$
 
-$$s = w \space + \space r \space \text{...Cartesian position of the point where the gusset curve merges with the leaf}$$
+$$s = w \space + \space r \quad \text{...Cartesian position of the point where the gusset curve merges with the leaf.}$$
 
 $$g = \text{Leafe gauge}$$
 
-// Compute the parabolic point of contact with the knuckle cylinder.
+- Compute the parabolic point of contact with the knuckle cylinder.
 
 i  = sqrt ( 8.0*r*r + s*s );    // Common root.
 x  = ( i - s )/2.0;             // x intercept.
