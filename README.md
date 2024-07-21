@@ -18,7 +18,7 @@ Compute gusset radius. The radius of the circle, that is tangential to the knuck
 
 r = ( 2.0*g*w + w*w ) / ( 2.0*g )
 
-$y=sqrt{3x-1}+(1+x)^2$
+$\ y=sqrt{3x-1}+(1+x)^2$
 
 
 
