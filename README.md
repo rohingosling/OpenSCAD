@@ -4,7 +4,7 @@
 Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com/thing:2187167)
 
 
-| ![Image](images/Composite_1.PNG) | ![Image](images/Composite_1.PNG) |
+| ![Image](images/parametric_hinge/photo_1_0.jpg) | ![images/parametric_hinge/photo_2_0.jpg) |
 | - | - |
 
 
