@@ -2,7 +2,18 @@
 
 ## Parametric Butt Hinge
 Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com/thing:2187167)
-### Gusset PArameters
+### Gusset Parameters
+
+Circular
+![Image](images/parametric_hinge/Circular.PNG)
+
+Linear
+![Image](images/parametric_hinge/Linear.PNG)
+
+Parabolic
+![Image](images/parametric_hinge/Parabolic.PNG)
+
+None
 ![Image](images/parametric_hinge/None.PNG)
 
 ### Sample Prints
