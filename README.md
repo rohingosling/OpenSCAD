@@ -42,9 +42,9 @@ $$y = a^2 \cdot ( x - s )^2$$
 
 - Input values:
 
-$$w = \text{Gusset width}$$
+$$w \quad \text{...Gusset width}$$
 
-$$g = \text{Knuckle radius}$$
+$$g \quad \text{...Knuckle radius}$$
 
 - Compute gusset radius:<br>
   The radius of the circle, that is tangential to the knuckle cylinder.
