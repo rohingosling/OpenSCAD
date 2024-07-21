@@ -117,12 +117,18 @@ Thingiverse URL: [www.thingiverse.com/thing:2386923]([https://www.thingiverse.co
 | - | - | - |
 
 ## Gear Tester
-Thingiverse URL: N/A
 
 ### Sample Prints
 | ![Image](images/gear_tester/code_1_0.png) | ![Image](images/gear_tester/gear_tester_1_0.png) |
 | - | - |
 
+## Cat-Food Sieve
+
+Mixed my cat's food. The vet told me not to mix is. So I 3D-printed a sieve to separate it again.
+
+### Sample Prints
+| ![Image](images/temp/sieve_1_0.png) |
+| - |
 
 
 
