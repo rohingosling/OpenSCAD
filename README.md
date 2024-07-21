@@ -4,7 +4,7 @@
 Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com/thing:2187167)
 ### Gusset Parameters
 
-### Parabolic
+#### Parabolic
 
 - Initialize input values.
 
@@ -33,12 +33,13 @@ $$y = \sqrt { r^2 - x^2 } \quad \text{...y intercept.}$$
 
 $$a_n = \sqrt[4]{ 2 } \cdot \sqrt[4]{ s \cdot ( i - s ) - 2 \cdot r^2 } \quad \text{...Numerator}.$$
 
-ad = sqrt ( s*( 5.0*s - 3.0*i ) + 4.0*r*r );            // Denominator.
-a  = an / ad;  
+$$a_d = \sqrt{ s \cdot ( 5 \cdot s - 3 \cdot i ) + 4 \cdot r^2 } \double \text{...Denominator.}$$
+
+$$a  = \dfrac{a_n}{a_d}$$  
 
 ![Image](images/parametric_hinge/Parabolic.PNG)
 
-### Circular
+#### Circular
 
 - Input values:
 
@@ -63,10 +64,10 @@ $$x = \dfrac{ h \cdot ( g \space + \space w ) }{ r }$$
 
 ![Image](images/parametric_hinge/Circular.PNG)
 
-### Linear
+#### Linear
 ![Image](images/parametric_hinge/Linear.PNG)
 
-### None
+#### None
 ![Image](images/parametric_hinge/None.PNG)
 
 ### Sample Prints
