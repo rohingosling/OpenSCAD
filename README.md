@@ -12,7 +12,8 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 Input values.
 
 $$
-w = \text{Gusset width}\n
+w = \text{Gusset width}
+
 g = \text{Knuckle radius}
 $$
 
