@@ -8,10 +8,13 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 
 - Initialize input values.
 
-  $$w \quad \text{...Gusset width.}$$<br>
-  $$h \quad \text{...Hinge leaf height.}$$<br>
-  $$r \quad \text{...Knuckle radius is equal to the leaf gauge.}$$<br>
-  $$g \quad \text{...Leafe gauge}$$<br>  
+  $$w \quad \text{...Gusset width.}$$
+  
+  $$h \quad \text{...Hinge leaf height.}$$
+  
+  $$r \quad \text{...Knuckle radius is equal to the leaf gauge.}$$
+  
+  $$g \quad \text{...Leafe gauge}$$
 
 - Compute the parabolic point of contact with the knuckle cylinder.
 
