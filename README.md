@@ -4,8 +4,9 @@
 Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com/thing:2187167)
 ### Gusset Parameters
 
-#### Parabolic
-
+| Parabolic |
+| --- |
+|
 - Input values.
 
 $$w \quad \text{...Gusset width.}$$
@@ -35,6 +36,7 @@ $$a_d = \sqrt{ s \cdot ( 5 \cdot s - 3 \cdot i ) + 4 \cdot r^2 } \quad \text{...
 $$a = \dfrac{a_n}{a_d}$$
 
 $$y = a^2 \cdot ( x - s )^2$$
+|
 
 ![Image](images/parametric_hinge/Parabolic.PNG)
 
