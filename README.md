@@ -4,10 +4,10 @@
 Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com/thing:2187167)
 ### Gusset Parameters
 
-Parabolic
+### Parabolic
 ![Image](images/parametric_hinge/Parabolic.PNG)
 
-**Circular**
+### Circular
 
 Initialize input values.
 
@@ -29,10 +29,10 @@ x = h*( g + w ) / r
 
 ![Image](images/parametric_hinge/Circular.PNG)
 
-Linear
+### Linear
 ![Image](images/parametric_hinge/Linear.PNG)
 
-None
+### None
 ![Image](images/parametric_hinge/None.PNG)
 
 ### Sample Prints
