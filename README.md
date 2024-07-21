@@ -18,7 +18,7 @@ $$g \quad \text{...Leafe gauge.}$$
 
 - Compute the parabolic point of contact with the knuckle cylinder.
 
-$$s = w \space + \space r \quad \text{Cartesian position of the point where the gusset curve merges with the leaf.}$$
+$$s = w \space + \space r \quad \text{...Cartesian position of the point where the gusset curve merges with the leaf.}$$
 
 $$i = \sqrt { 8 \cdot r^2 + s^2 } \quad \text{...Common root.}$$
 
