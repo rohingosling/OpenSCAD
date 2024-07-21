@@ -28,8 +28,8 @@ Compute the intersection point between the knuckle and gusset cutting tool, usin
 The coordinates of the intersection point are, p(x,h), where h is the vertical value of the coordinate.
 
 > $x = \dfrac{ h \cdot ( g \space + \space w ) }{ r }$
+> 
 
-<br>
 
 ![Image](images/parametric_hinge/Circular.PNG)
 
