@@ -4,7 +4,7 @@
 Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com/thing:2187167)
 ### Gusset Parameters
 
-#### Parabolic |
+#### Parabolic
 
 - Input values.
 
