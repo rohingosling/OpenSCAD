@@ -11,11 +11,12 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 
 Input values.
 
+$$
 \begin{document}
-$$w = \text{Gusset width}$$
-
-$$g = \text{Knuckle radius}$$
+w = \text{Gusset width}
+g = \text{Knuckle radius}
 \end{document}
+$$
 
 Compute gusset radius.<br>
 The radius of the circle, that is tangential to the knuckle cylinder.
