@@ -5,6 +5,34 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 ### Gusset Parameters
 
 ### Parabolic
+
+- Initialize input values.
+
+%%w = \text{Gusset width}$$.
+
+$$h = \text{Hinge leaf height}$$
+
+$$r = \text{Knuckle radius is equal to the leaf gauge}$$.
+
+$$s = w \space + \space r \space \text{...Cartesian position of the point where the gusset curve merges with the leaf}$$
+
+$$g = \text{Leafe gauge}$$
+
+// Compute the parabolic point of contact with the knuckle cylinder.
+
+i  = sqrt ( 8.0*r*r + s*s );    // Common root.
+x  = ( i - s )/2.0;             // x intercept.
+y  = sqrt ( r*r - x*x );        // y intercept.
+
+// Compute coefficient 'a' of vertex form parabola.
+//
+//      2      2 
+// y = a  (x-s)
+
+an = root4 ( 2.0 ) * root4 ( s*( i - s ) - 2.0*r*r );   // Numerator.
+ad = sqrt ( s*( 5.0*s - 3.0*i ) + 4.0*r*r );            // Denominator.
+a  = an / ad;  
+
 ![Image](images/parametric_hinge/Parabolic.PNG)
 
 ### Circular
