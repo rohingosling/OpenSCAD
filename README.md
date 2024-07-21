@@ -7,9 +7,6 @@ Thingiverse URL: [www.thingiverse.com/thing:2224678](https://www.thingiverse.com
 | ![Image](images/caged_ball_bearing/internal_1_0.png) | ![Image](images/caged_ball_bearing/internal_2_0.png) | ![Image](images/caged_ball_bearing/internal_3_0.png) | ![Image](images/caged_ball_bearing/internal_4_0.png) |
 | - | - | - | - |
 | ![Image](images/caged_ball_bearing/code_1_0.png) | ![Image](images/caged_ball_bearing/photo_1_0.png) | ![Image](images/caged_ball_bearing/photo_2_0.png) | ![Image](images/caged_ball_bearing/photo_3_0.png) |
-| - | - | - | - |
-| ![Image](images/caged_ball_bearing/code_1_0.png) | ![Image](images/caged_ball_bearing/photo_1_0.png) | ![Image](images/caged_ball_bearing/photo_2_0.png) | ![Image](images/caged_ball_bearing/photo_3_0.png) |
-
 
 ## Parametric Butt Hinge
 Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com/thing:2187167)
@@ -17,6 +14,7 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 ### Sample Prints
 | ![Image](images/parametric_hinge/model_2_0.png) | !![Image](images/parametric_hinge/model_3_0.png) | ![Image](images/parametric_hinge/model_1_0.png) | ![Image](images/parametric_hinge/model_4_0.png) |
 | - | - | - | - |
+| ![Image](images/parametric_hinge/photo_1_0.png) | ![Image](images/parametric_hinge/photo_2_0.png) | ![Image](images/parametric_hinge/photo_3_0.png) | ![Image](images/parametric_hinge/photo_4_0.png) |
 | ![Image](images/parametric_hinge/photo_1_0.png) | ![Image](images/parametric_hinge/photo_2_0.png) | ![Image](images/parametric_hinge/photo_3_0.png) | ![Image](images/parametric_hinge/photo_4_0.png) |
 
 ### Gusset Parameters
