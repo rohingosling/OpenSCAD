@@ -8,17 +8,14 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 
 - Initialize input values.
 
-  $$w:$$ Gusset width.<br>
-
-  $$h:$$ Hinge leaf height.<br>
-
-  $$r:$$ Knuckle radius is equal to the leaf gauge.<br>
-
-  $$s = w \space + \space r \quad$$ Cartesian position of the point where the gusset curve merges with the leaf. <br>
-
-  $$g:$$ Leafe gauge.<br>
+  $$w \quad \text{...Gusset width.}$$<br>
+  $$h \quad \text{...Hinge leaf height.}$$<br>
+  $$r \quad \text{...Knuckle radius is equal to the leaf gauge.}$$<br>
+  $$g \quad \text{...Leafe gauge}$$<br>  
 
 - Compute the parabolic point of contact with the knuckle cylinder.
+
+$$s = w \space + \space r \quad \text{Cartesian position of the point where the gusset curve merges with the leaf.}$$
 
 $$i = \sqrt { 8 \cdot r^2 + s^2 } \quad \text{...Common root.}$$
 
