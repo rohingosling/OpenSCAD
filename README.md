@@ -20,10 +20,13 @@ $$g = \text{Leafe gauge}$$
 
 - Compute the parabolic point of contact with the knuckle cylinder.
 
-$$i  = \sqrt { 8 \cdot r^2 + s^2 } \quad \text{...Common root.}$$
+$$
+i  = \sqrt { 8 \cdot r^2 + s^2 } \quad \text{...Common root.}
 
-x  = ( i - s )/2.0;             // x intercept.
-y  = sqrt ( r*r - x*x );        // y intercept.
+x  = \dfrac{ i - s }{2} \quad \text{...x intercept.}
+
+y  = \sqrt { r^2 - x^2 } \quad \text{...y intercept.}
+$$
 
 // Compute coefficient 'a' of vertex form parabola.
 //
