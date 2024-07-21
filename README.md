@@ -24,10 +24,10 @@ The point of intersection between the knuckle cylinder and the gusset cutter.
 
 > $h = \dfrac{ g \cdot r }{ \sqrt{ 2 \cdot g \cdot w \space + \space g^2 \space + \space r^2 \space + \space w^2 } }$
 
-Compute the intersection point between the knuckle and gusset cutting tool, using gusset height.
-The coordinates of the intersection point are, p(x,h), where h is the vertical value of the coordinate.
+Compute the intersection point between the knuckle and gusset cutting tool, using gusset height.<br>
+The coordinates of the intersection point are, `p(x,h)`, where `h` is the vertical value of the coordinate.
 
-> $x = \dfrac{h \cdot ( g \space + \space w )}{r}$
+> $x = \dfrac{ h \cdot ( g \space + \space w ) }{ r }$
 
 ![Image](images/parametric_hinge/Circular.PNG)
 
