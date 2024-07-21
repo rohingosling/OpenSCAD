@@ -107,10 +107,6 @@ $$b = -a \cdot s$$
 
 #### None
 
-$$y = y$$
-
-$$x = x$$
-
 ![Image](images/parametric_hinge/None.PNG)
 
 ## Parametric Test Block
