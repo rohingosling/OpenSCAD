@@ -6,7 +6,8 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 
 | Parabolic |
 | --- |
-|- Input values.
+|<p>
+- Input values.
 
 $$w \quad \text{...Gusset width.}$$
   
@@ -34,7 +35,8 @@ $$a_d = \sqrt{ s \cdot ( 5 \cdot s - 3 \cdot i ) + 4 \cdot r^2 } \quad \text{...
 
 $$a = \dfrac{a_n}{a_d}$$
 
-$$y = a^2 \cdot ( x - s )^2$$|
+$$y = a^2 \cdot ( x - s )^2$$</p>
+|
 
 
 ![Image](images/parametric_hinge/Parabolic.PNG)
