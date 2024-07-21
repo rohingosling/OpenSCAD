@@ -12,6 +12,8 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 Input values.
 
 $$
+\documentclass[fleqn]{article}
+\usepackage{amsmath}
 \begin{document}
 w = \text{Gusset width}
 g = \text{Knuckle radius}
