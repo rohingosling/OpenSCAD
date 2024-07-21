@@ -9,18 +9,21 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 
 ### Circular
 
-Initialize input values.
+Input values.
 
 > $w = \text{Gusset width}$<br>
   $g = \text{Knuckle radius}$
 
-Compute gusset radius. The radius of the circle, that is tangential to the knuckle cylinder.
+Compute gusset radius.<br>
+The radius of the circle, that is tangential to the knuckle cylinder.
 
 > $r = \dfrac{ 2 \cdot g \cdot w \space + \space w^2}{ 2 \cdot g}$
 
-Compute gusset height. The point of intersection between the knuckle cylinder and the gusset cutter.
+Compute gusset height.<br>
+The point of intersection between the knuckle cylinder and the gusset cutter.
 
 h = ( g*r ) / sqrt ( g*g + 2.0*g*w + r*r + w*w )
+> $h = \dfrac{ g \cdot r }{ \sqrt{ d \cdot g} }$
 
 Compute intersection point between the knuckle and gusset cutting tool, using gusset height.
 The coordinate of the intersection point are, p(x,h), where h is the vertical value of the coordinate.
