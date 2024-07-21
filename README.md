@@ -8,7 +8,7 @@ Thingiverse URL: [www.thingiverse.com/thing:2187167](https://www.thingiverse.com
 
 | A | B | C |
 | ---- | ---- | ---- |
-| ![Image](images/composite_1.PNG) |      |      |
+| ![Image](images/composite_1.PNG) | ![Image](images/composite_1.PNG) |      |
 
 
   
